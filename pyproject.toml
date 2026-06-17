@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glyphforge"
+version = "0.1.0"
+description = "Beginner-friendly Pointwise Glyph starter generator for CFD meshing workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Sahil Chaudhary" }
+]
+keywords = ["CFD", "Pointwise", "Glyph", "SU2", "meshing", "aerospace"]
+
+[project.scripts]
+glyphforge = "glyphforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
